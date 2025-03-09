@@ -1,14 +1,28 @@
+html {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+  }
+  
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: black;
-    font-family: 'monaco', monospace;
+    font-family: "monaco", monospace;
     font-size: 1.5em;
     padding: 0.5em;
     margin-left: 1em;
     margin-right: 1em;
-}
+  }
+  
 
 a {
     text-decoration: none;
