@@ -8,6 +8,7 @@
     <script src="./js/app.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Honk&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap');
     </style>
 </head>
 
@@ -30,7 +31,6 @@
     </header>
     <main>
         <h1 class="introtitle">MEES HOFF</h1>
-        <h3 class="introtext">😎🤙  </h3>
 
         <div class="skillscontainer">
             <h2 class="skillstext">Skills</h2>
@@ -81,6 +81,32 @@
                 cursor.classList.remove("expand");
             }, 500)
         })
+
+        // Bouncing circle
+        document.addEventListener('click', function(e) {
+        const circle = document.createElement('div');
+        circle.className = 'circle';
+        circle.style.left = e.pageX + 'px';
+        // Plaats de cirkel onderaan de pagina
+        circle.style.top = (window.innerHeight) + 'px';
+
+        // Definieer de minimum en maximum waarden voor de spronghoogte (in pixels)
+        const min = 20;
+        const max = 100;
+        // Genereer een random getal tussen min en max
+        const randomValue = Math.floor(Math.random() * (max - min + 1)) + min;
+        
+        // Stel de custom property --jump in op de negatieve waarde (om omhoog te gaan)
+        circle.style.setProperty('--jump', `-${randomValue}px`);
+        
+        document.body.appendChild(circle);
+
+        // Verwijder de cirkel na de animatie
+        circle.addEventListener('animationend', () => {
+            circle.remove();
+        });
+        });
+
 
     </script>
 </body>
