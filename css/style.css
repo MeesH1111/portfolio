@@ -68,10 +68,36 @@ p {
   font-weight: 500;
   font-style: normal;
 
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  transition: 0.3s;
 }
 
-.introtext {
-  padding-bottom: 16em;
+.introtitle:hover {
+  /* text-shadow: 0px -10px 100px rgba(0, 255, 255, 0.5), 20px 10px 0 rgba(255, 0, 0, 0.5); */
+  text-shadow: 0px -10px 100px #F7E997, 20px 10px 0 #d8115a8e;
+
+}
+
+.contactcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -6.3em;
+}
+
+.contacttext {
+  font-family: "Roboto Flex", sans-serif;
+  color: hsl(0, 0%, 36%, 0.8);
+  font-size: 1em;
+}
+
+.contacticon {
+  transition: 0.2s ease-in-out;
+}
+
+.contacticon:hover {
+  transform: scale(1.15);
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
 }
 
 .div {
@@ -104,8 +130,8 @@ p {
 
 .skillstext {
   font-family: "Roboto Flex", sans-serif;
-  color: #5C5C5C;
-  font-size: 2em;
+  color: hsla(0, 0%, 36%, 1);
+  font-size: 1em;
 }
 
 .skillsicon {
