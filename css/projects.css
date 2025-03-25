@@ -28,7 +28,7 @@ a {
     padding: 0.5em;
 }
 
-a:hover {
+nav a:hover {
     color: darkred;
     text-decoration: underline;
 }
@@ -40,6 +40,17 @@ body {
     /* background: repeating-linear-gradient(45deg, #f3f3f3, #f3f3f3 10px, #e5e5e5 10px, #e5e5e5 20px); */
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin: 1em;
 }
 
 .cards {
@@ -59,9 +70,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 220px;
+    width: 300px;
     text-align: center;
     padding: 15px;
+    padding-bottom: 3em;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -77,12 +89,11 @@ body {
 }
 
 .cardtitle {
-    font-size: 1.2em;
+    font-size: 1.8em;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     margin: 10px 0;
     color: #333;
-}
-
-.carddescription {
-    font-size: 1em;
-    color: #777;
 }
