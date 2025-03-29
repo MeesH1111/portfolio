@@ -96,16 +96,22 @@ p {
 
 }
 
+.contactandskills {
+  padding: 4.5em;
+  margin: 4.5em;
+}
+
 .contactcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -0.3em;
+  margin-bottom: 2.5em;
 }
 
 .contacttext {
   font-family: "Roboto Flex", sans-serif;
-  color: hsl(0, 0%, 36%, 0.8);
+  color: hsla(0, 0%, 36%, 0.8);
   font-size: 1em;
 }
 
@@ -124,21 +130,36 @@ p {
 }
 
 .tooltiptext {
+  font-family: "Josefin Sans", sans-serif;
   visibility: hidden;
   width: 120px;
-  color: #000000;
+  color: hsla(0, 0%, 36%, 1);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-
   position: absolute;
   z-index: 1;
-  transform: translateY(200%);
+  bottom: -50%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  transition: 0.3s ease;
+  opacity: 1;
 }
 
 .div {
@@ -154,12 +175,8 @@ p {
 }
 
 .skillscontainer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  padding: 10px;
-  text-align: center; /* Centers the content */
+  text-align: center; 
 }
 
 /* .skills {
@@ -182,28 +199,6 @@ p {
 .skillsicon:hover {
   transform: scale(1.15);
   /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
-}
-
-.circle {
-  width: 50px;
-  height: 50px;
-  background: #3498db;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  animation: bounce 1s ease-in-out forwards;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translate(-50%, -50%) translateY(0);
-  }
-  50% {
-    transform: translate(-50%, -50%) translateY(var(--jump));
-  }
-  100% {
-    transform: translate(-50%, -50%) translateY(0);
-  }
 }
 
 
