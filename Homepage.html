@@ -117,6 +117,12 @@
                     </div>
 
                     <div class="tooltip">
+                        <a href="https://react.dev/" target="_blank" title="React"><img a class="skillsicon" width="50"
+                                height="50" src="./images/reactlogoicon.svg" alt="react" /><span
+                                class="tooltiptext">React</span></a>
+                    </div>
+
+                    <div class="tooltip">
                         <a href="https://www.jetbrains.com/phpstorm/" target="_blank" title="Jetbrains PhpStorm"><img a
                                 class="skillsicon" width="50" height="50" src="./images/phpstormlogoicon.svg"
                                 alt="figma--v1" /><span class="tooltiptext">PhpStorm</span></a>
@@ -145,24 +151,6 @@
             </div>
         </div>
     </main>
-
-    <script>
-        // Custom Cursor
-        const cursor = document.querySelector('.cursor');
-
-        document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: " + (e.pageY - scrollY) + "px; left: " + (e.pageX - 1) + "px;")
-        })
-
-        document.addEventListener('click', () => {
-            cursor.classList.add("expand");
-
-            setTimeout(() => {
-                cursor.classList.remove("expand");
-            }, 500)
-        });
-
-    </script>
 </body>
 
 </html>
