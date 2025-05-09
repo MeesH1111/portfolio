@@ -28,7 +28,7 @@ body {
   background: linear-gradient(203deg, #faebd7 40%, #ff3ef759 100%);
   /* background: repeating-linear-gradient(45deg, #f3f3f3, #f3f3f3 10px, #e5e5e5 10px, #e5e5e5 20px); */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
 
 }
 
@@ -101,9 +101,14 @@ p {
 
 }
 
-.contactandskills {
+/* .contactandskills {
   padding: 4.5em;
   margin: 4.5em;
+} */
+
+.contactandskills {
+  padding-top: 4.5em;
+  margin-top: 4.5em;
 }
 
 .contactcontainer {

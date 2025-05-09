@@ -39,7 +39,7 @@ body {
     background: linear-gradient(203deg, rgba(250, 235, 215, 1) 50%, rgba(255, 62, 247, 0.35) 100%);
     /* background: repeating-linear-gradient(45deg, #f3f3f3, #f3f3f3 10px, #e5e5e5 10px, #e5e5e5 20px); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
 }
 
 .logo:hover {
