@@ -111,3 +111,72 @@ body {
     font-style: normal;
     color: #333;
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        font-size: 1.2em;
+    }
+
+    #navlink {
+        text-decoration: underline;
+    }
+
+    .title {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .cardscontainer2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .cardimg {
+        height: 60%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+
+    .title {
+        font-size: 2em;
+        margin: 0.5em;
+    }
+
+    .cardscontainer1,
+    .cardscontainer2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .cardimg {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .cardtitle {
+        font-size: 1.4em;
+        padding: 0.5em 0;
+    }
+}

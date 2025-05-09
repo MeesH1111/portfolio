@@ -10,7 +10,6 @@ body {
   width: 100%;
 }
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -64,6 +63,9 @@ body {
 }
 
 .personalpicture {
+  display: block;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 2em;
 }
 
@@ -131,4 +133,86 @@ footer {
 .iconslink {
   color: hsla(0, 0%, 36%, 1);
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.2em;
+  }
+
+  #navlink {
+    text-decoration: underline;
+  }
+
+  .aboutcontainer {
+    flex-direction: column;
+    padding: 3em 2em;
+    margin: 2em 1em;
+  }
+
+  .contactcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .abouttext {
+    width: 80vw;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .personalpicture {
+    max-width: 60vw;
+    margin-bottom: 2em;
+  }
+
+  .abouttextcontainer {
+    align-items: center;
+  }
+
+  .contactlink {
+    font-size: 0.9em;
+  }
+
+  footer {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+
+  .abouttext {
+    font-size: 0.95em;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactlink {
+    margin-bottom: 0.5em;
+  }
+
+  .personalpicture {
+    width: 60vw;
+  }
+
+  .aboutcontainer {
+    padding: 2em 1em;
+  }
+
+  .iconstext {
+    font-size: 0.9em;
+  }
 }
