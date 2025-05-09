@@ -44,6 +44,11 @@ body {
     background-size: cover;
 }
 
+.logo:hover {
+    scale: 1.05;
+    transition: 0.2s linear;
+}
+
 .projectcontainer {
     display: flex;
     justify-content: center;
@@ -52,9 +57,13 @@ body {
     margin: 2em;
 }
 
-.projectimg {
+.projectimgs {
     padding: 1em;
     margin: 1em;
+}
+
+.projectimg {
+    padding-bottom: 3em;
 }
 
 .projectinfo {
