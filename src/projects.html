@@ -1,82 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/projects.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/projects.css" />
     <title>My Projects</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Honk&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Honk&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap");
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div>
-            <!-- <p class="navp">Mees Hoff</p> -->
-            <a href="Homepage.html" title="Link naar homepage">
-                <img src="../images/Portfolio_Logo.png" alt="Logo" class="logo" width="176px" height="70px">
-            </a>
-        </div>
-        <div>
-            <a href="about.html" id="navlink" title="Link naar about me page">About</a>
-            <a href="projects.html" id="navlink" title="Link naar my projects page">Work</a>
-        </div>
+      <div>
+        <!-- <p class="navp">Mees Hoff</p> -->
+        <a href="Homepage.html" title="Link naar homepage">
+          <img
+            src="../images/Portfolio_Logo.png"
+            alt="Logo"
+            class="logo"
+            width="176px"
+            height="70px"
+          />
+        </a>
+      </div>
+      <div>
+        <a href="about.html" id="navlink" title="Link naar about me page"
+          >About</a
+        >
+        <a href="projects.html" id="navlink" title="Link naar my projects page"
+          >Work</a
+        >
+      </div>
     </nav>
 
     <main>
-        <h1 class="title">Projects</h1>
-        <div class="cardscontainer1">
-            <div class="cardscontainer2">
-                <a href="LaravelProject.html">
-                    <div class="card">
-                        <img class="cardimg" src="../images/laravelproject/Laravelprojectfoto1.png" width="200px"
-                             height="200px">
-                        <h2 class="cardtitle">Laravel website</h2>
-                    </div>
-                </a>
-
-                <a href="fullstackwebsite.html">
-                    <div class="card">
-                        <img class="cardimg" src="../images/fullstackwebsite/Fullstackwebsitefoto1.png" width="200px"
-                             height="200px">
-                        <h2 class="cardtitle">Full Stack website</h2>
-                    </div>
-                </a>
+      <h1 class="title">Projects</h1>
+      <div class="cardscontainer1">
+        <div class="cardscontainer2">
+          <div class="card">
+            <img
+              class="cardimg"
+              src="../images/laravelproject/Laravelprojectfoto1.png"
+              width="200px"
+              height="200px"
+            />
+            <div class="card-techstack">
+              <span class="card-tech">Laravel</span>
+              <span class="card-tech">PHP</span>
+              <span class="card-tech">Tailwind CSS</span>
             </div>
+            <h2 class="card-title">Laravel website</h2>
+            <p class="card-description">
+              Website gemaakt met Laravel met een User en Admin rol, waar CRUD
+              functionaliteit is toegepast. Met OWASP Top 10 beveiliging.
+            </p>
+            <a
+              href="https://github.com/MeesH1111/prg-05-Laravel-project"
+              class="card-githublink"
+              target="_blank"
+            >
+              <svg
+                class="github-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="2em"
+                height="2em"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                ></path>
+              </svg>
+            </a>
+          </div>
 
-            <div class="cardscontainer2">
-                <a href="excaliburjsgame.html">
-                    <div class="card">
-                        <img class="cardimg" src="../images/earthifacts/earthifactsfoto2.png" width="200px"
-                             height="200px">
-                        <h2 class="cardtitle">Earthifacts</h2>
-                    </div>
-                </a>
-
-                <a href="portfolioproject.html">
-                    <div class="card">
-                        <img class="cardimg" src="../images/portfolioproject/portfolioprojectfoto1.png" width="200px"
-                             height="200px">
-                        <h2 class="cardtitle">Portfolio</h2>
-                    </div>
-                </a>
+          <div class="card">
+            <img
+              class="cardimg"
+              src="../images/fullstackwebsite/Fullstackwebsitefoto1.png"
+              width="200px"
+              height="200px"
+            />
+            <div class="card-techstack">
+              <span class="card-tech">React</span>
+              <span class="card-tech">Vite</span>
+              <span class="card-tech">Tailwind CSS</span>
+              <span class="card-tech">MongoDB</span>
             </div>
-
-            <div class="cardscontainer2">
-                <a href="skatespotsapp.html">
-                    <div class="card">
-                            <img class="cardimg" src="../images/skatespots/StreetSkateSpotsLogo.png" width="200px"
-                             height="200px">
-                            <h2 class="cardtitle">Street Skate Spots</h2>
-                    </div>
+            <h2 class="card-title">Full Stack website</h2>
+            <p class="card-description">
+              Frontend website gemaakt in React, met een backend RESTful
+              Webservice.
+            </p>
+            <div class="githublink-container">
+              <div class="tooltip">
+                <a
+                  href="https://github.com/MeesH1111/prg06-praktijkopdracht-2"
+                  class="card-githublink"
+                  target="_blank"
+                >
+                  <svg
+                    class="github-logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="2em"
+                    height="2em"
+                    viewBox="0 0 30 30"
+                  >
+                    <path
+                      d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                    ></path>
+                  </svg>
+                  <span class="tooltiptext">Frontend</span>
                 </a>
+              </div>
+              <div class="tooltip">
+                <a
+                  href="https://github.com/MeesH1111/prg06-praktijkopdracht-1"
+                  class="card-githublink"
+                  target="_blank"
+                >
+                  <svg
+                    class="github-logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="2em"
+                    height="2em"
+                    viewBox="0 0 30 30"
+                  >
+                    <path
+                      d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                    ></path>
+                  </svg>
+                  <span class="tooltiptext">Backend</span>
+                </a>
+              </div>
             </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="cardimg"
+              src="../images/earthifacts/earthifactsfoto2.png"
+              width="200px"
+              height="200px"
+            />
+            <div class="card-techstack">
+              <span class="card-tech">Javascript</span>
+              <span class="card-tech">Vite</span>
+            </div>
+            <h2 class="card-title">Earthifacts</h2>
+            <p class="card-description">
+              Exploration game gemaakt in Excalibur.js, een 2D TypeScript game
+              engine, met een team van 4 personen.
+            </p>
+            <a
+              href="https://github.com/Justin4625/Earthifacts-CLE4"
+              class="card-githublink"
+              target="_blank"
+            >
+              <svg
+                class="github-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="2em"
+                height="2em"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </div>
+        <div class="cardscontainer2">
+          <div class="card">
+            <img
+              class="cardimg"
+              src="../images/portfolioproject/portfolioprojectfoto1.png"
+              width="200px"
+              height="200px"
+            />
+            <div class="card-techstack">
+              <span class="card-tech">HTML</span>
+              <span class="card-tech">CSS</span>
+              <span class="card-tech">Javascript</span>
+            </div>
+            <h2 class="card-title">Portfolio</h2>
+            <p class="card-description">
+              Portfolio website oorspronkelijk gemaakt voor een keuzevak, maar
+              nu regelmatig bijgehouden met nieuwe projecten en informatie over
+              mijzelf.
+            </p>
+            <a
+              href="https://github.com/MeesH1111/portfolio"
+              class="card-githublink"
+              target="_blank"
+            >
+              <svg
+                class="github-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="2em"
+                height="2em"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="card">
+            <img
+              class="cardimg"
+              src="../images/skatespots/StreetSkateSpotsLogo.png"
+              width="200px"
+              height="200px"
+            />
+            <div class="card-techstack">
+              <span class="card-tech">React Native</span>
+              <span class="card-tech">Expo</span>
+              <span class="card-tech">Tailwind CSS</span>
+            </div>
+            <h2 class="card-title">Street Skate Spots</h2>
+            <p class="card-description">
+              React Native app met styling door middel van Tailwind CSS, waarbij
+              ook gebruik gemaakt is van React Native Maps.
+            </p>
+            <a
+              href="https://github.com/MeesH1111/prg07-praktijkopdracht"
+              class="card-githublink"
+              target="_blank"
+            >
+              <svg
+                class="github-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="2em"
+                height="2em"
+                viewBox="0 0 30 30"
+              >
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- TEST CARD -->
+
+        <!-- <div class="testcard">
+                <div class="testimg">
+                    <img class="cardimg" src="../images/skatespots/StreetSkateSpotsLogo.png" width="200px"
+                    height="200px">
+                </div>
+                <div class="testcardcontent">
+                    <h2 class="testcardtitle">Street Skate Spots</h2>
+                </div>
+            </div> -->
+      </div>
     </main>
-
-</body>
-
+  </body>
 </html>

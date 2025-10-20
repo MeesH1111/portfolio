@@ -27,7 +27,6 @@ body {
   /* background: repeating-linear-gradient(45deg, #f3f3f3, #f3f3f3 10px, #e5e5e5 10px, #e5e5e5 20px); */
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 html {
@@ -95,8 +94,9 @@ p {
 
 .introtitle:hover {
   /* text-shadow: 0px -10px 100px rgba(0, 255, 255, 0.5), 20px 10px 0 rgba(255, 0, 0, 0.5); */
-  text-shadow: 0px -10px 100px #F7E997, 20px 10px 0 #d8115a8e;
-
+  text-shadow:
+    0px -10px 100px #f7e997,
+    20px 10px 0 #d8115a8e;
 }
 
 /* .contactandskills {
